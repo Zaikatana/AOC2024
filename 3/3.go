@@ -47,6 +47,7 @@ func main() {
 	fmt.Println(len(condSlice))
 
 	for _, condElement := range condSlice {
+		fmt.Println(condElement, "\n")
 		mulSlice := mulR.FindAllString(condElement, -1)
 		condTotal := processMul(mulSlice)
 
